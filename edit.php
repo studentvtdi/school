@@ -91,8 +91,8 @@ if(!isset($_GET['id'])){
     </div>
 <!-- The value data is written as //</?php // echo ($student['gender']=="female" ? 'checked="checked"':''); // ?/>  for the radio button inputs-->
 
-    <button type="submit" name="submit" class="btn btn-success btn-block">Save Changes</button>
-</form>
+    <a href="viewrecords.php" class="btn btn-default ">Back To List</a>
+    <button type="submit" name="submit" class="btn btn-success ">Save Changes</button></form>
 
 <?php } ?>
 
