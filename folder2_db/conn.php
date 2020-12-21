@@ -1,9 +1,18 @@
 <?php 
-
+//Development Connection
+/*
 $host='127.0.0.1';
 $db='school_db';
 $user='root';
 $pass='';
+$charset='utf8mb4';
+*/
+
+//Remote Connection
+$host='remotemysql.com';
+$db='kB2aCJoWBE';
+$user='kB2aCJoWBE';
+$pass='umqeQfrmFg';   //make sure there are no empty spaces in between the quotes
 $charset='utf8mb4';
 
 $dsn="mysql:host=$host;dbname=$db;charset=$charset";

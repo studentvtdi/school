@@ -13,7 +13,7 @@ require_once 'folder2_db/conn.php';
 <div class="card" style="width: 50rem;">
   <div class="card-body">
     
-    <p class="card-text">Discover a whole new way you can treat yourself to high quality education and training! The VTDI is the institution you can trust to provide education and training programmes designed especially with you in mind. Quality assured, standards-driven, highly trained faculty, user-friendly curricula and course outlines, individual consultations and support, are all neatly wrapped in a competency based, student centred environment.
+    <p class="card-text">Discover a whole new way you can treat yourself to high quality education and training! The VTDI University is the institution you can trust to provide education and training programmes designed especially with you in mind. Quality assured, standards-driven, highly trained faculty, user-friendly curricula and course outlines, individual consultations and support, are all neatly wrapped in a competency based, student centred environment.
 
 </p>
     
