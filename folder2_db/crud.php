@@ -134,10 +134,27 @@ class crud{
             return false;
                     
         }
-        
-        
-
+       
     }
+
+
+
+    public function getMajorbyId($id){
+        try{
+        $sql="SELECT*FROM majors WHERE 	major_id=:id";
+        $stmt=$this->db->prepare($sql);
+        $stmt->bindparam(':id',$id);
+        $stmt->execute();
+        $result=$stmt->fetch();
+        return $result;
+        }
+        catch(PDOException $e){
+                    echo $e->getMessage();
+                    return false;
+                            
+                }
+        
+        }
 
 
 }

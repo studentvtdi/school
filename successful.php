@@ -6,7 +6,7 @@ $title = 'Successful';
 
 require_once 'folder3_includes/header.php';
 require_once 'folder2_db/conn.php';
-
+require_once 'sendemail.php';
 
 
 if(isset($_POST['submit'])){
@@ -30,8 +30,9 @@ if(isset($_POST['submit'])){
   
 
   $isSuccess=$crud->insertStudents($fname, $lname, $addres, $birthdate, $email, $gender,$majors,$destination);    
-  
+  $majorname=$crud->getMajorbyId($majors);
   if($isSuccess){
+    SendEmail::SendMail($email,'Welcome to VTDI University 2020','You have successfully registered for the 2020 bachelor\'s degree third year programme');
     //echo '<h1 class="text-center text-success">You have been registered For The Third Year Bachelor Degree Programme</h1>';
     include 'folder3_includes/successmessage.php';
     }
@@ -66,9 +67,10 @@ if(isset($_POST['submit'])){
     </h6>
 
     <h6 class="card-text">
-     Major:    <?php echo $_POST['majors']; ?>
+     Major:    <?php echo $majorname['majorname']; ?> 
     </h6>
 
+    <!-- database name use 'majorname' -->
     <h6 class="card-text">
      Email:   <?php echo $_POST['email']; ?>
     </h6>
